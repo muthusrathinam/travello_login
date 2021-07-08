@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/js/bootstrap.min.js">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="vendor/fontawesome/webfonts/">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div id="popup">
+        <div class="content">
+            
+            <p class="forgot"><i class="fa fa-key"></i>Forgot Password</p>
+            <p class="desc">Enter the email address, we'll send you link to reset your password</p>
+            <div class="input-box">
+                <input class="text" type="email" placeholder="Enter your Email">
+            </div>
+            <div class="input-box">
+                <input type="submit" class="btn" value="Send Link">
+            </div>
+        </div>
+        <i id="close" onclick="popupToggle();" class="far fa-times-circle"></i>
+    </div>
+    
+    <div class="container-fluid" id="blur">
+        <div class="row page">
+            <div class="col-lg-6">
+                <div class="img-fluid img">
+                    <img src="img/travel1.svg" alt="travel.pic">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="login-content">
+                    <form action="index.html">
+                        <h3>Welcome back</h3>
+                        <div class="input-div one">
+                            <div class="i">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <p>Email</p>
+                                <input class="input" id="email" type="email">
+                            </div>
+                        </div>
+                        <small id="errMail"></small>
+                        <div class="input-div">
+                            <div class="i">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <div>
+                                <p>Password</p>
+                                <input class="input" id="password" type="password">
+                            </div>
+                        </div>
+                        <small id="errPass"></small>
+                        <a href="#" onclick="popupToggle();">Forgot Password</a>
+                        
+                        
+
+                        <input type="submit" class="btn" id="login" value="login">
+
+                        <div class="already">
+                            <p>Didn't have an account? <span id="createHere" class="redirect">Create Here</span></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
